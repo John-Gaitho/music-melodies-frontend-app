@@ -1,8 +1,8 @@
 nav {
-  background-color: #281515;
-  color: rgb(51, 37, 37);
-  padding: 10px;
-  border-radius: 1%;
+  background-color: #aa85aa;
+  color: rgb(208, 180, 180);
+  padding: 40px;
+  border-radius: 5%;
 }
 
 nav ul {
@@ -46,7 +46,7 @@ p {
   margin: 5px 0;
 }
 strong {
-  color: #444;
+  color: #c7aeae;
 }
 body {
   color: #eef7f9;
