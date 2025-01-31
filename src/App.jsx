@@ -8,6 +8,24 @@ import SongForm from './components/SongForm';
 
 
 function App() {
+// Handle song submission 
+const handleSongSubmit = (values) => {
+  console.log('Song submitted:', values);
+  fetch('http://localhost:5000/songs', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(values),
+  })
+    .then((response) => response.json())
+    .then((data) => {
+      console.log('Song added:', data);
+    })
+    .catch((error) => console.error('Error adding song:', error));
+};
+
+
 
 return (
   <Router>
