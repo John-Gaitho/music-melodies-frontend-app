@@ -28,3 +28,29 @@ h1 {
   margin-bottom: 20px;
 }
 
+li {
+  background-color: ;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: #e42222;
+}
+
+ul {
+  padding: 0;
+  justify-content: center;
+  border-radius: 8px;
+}
+
+p {
+  margin: 5px 0;
+}
+strong {
+  color: #444;
+}
+body {
+  color: #eef7f9;
+  background-color: rgb(31, 11, 11);
+  background: url("https://dspncdn.com/a1/media/692x/29/19/1e/29191e8b14125c182a89de436a0114be.jpg")no-repeat center center fixed ;
+  background-size: cover;
+}
