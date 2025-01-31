@@ -1,0 +1,30 @@
+nav {
+  background-color: #281515;
+  color: rgb(51, 37, 37);
+  padding: 10px;
+  border-radius: 1%;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
