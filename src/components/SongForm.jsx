@@ -16,6 +16,55 @@ const SongForm = ({ onSubmit }) => {
       .required('Duration is required'),
   });
 
+  return (
+    <div className="song-form-container">
+      <h1>Add Song</h1>
+      <Formik
+        initialValues={{ title: '', artist: '', duration: '' }}
+        validationSchema={validationSchema}
+        onSubmit={onSubmit}
+      >
+        {() => (
+          <Form className="song-form">
+            <div>
+              <label htmlFor="title">Title</label>
+              <Field
+                type="text"
+                id="title"
+                name="title"
+                placeholder =  "     Enter song title"
+              />
+              <ErrorMessage name="title" component="div" className="error" />
+            </div>
+
+            <div>
+              <label htmlFor="artist">Artist</label>
+              <Field
+                type="text"
+                id="artist"
+                name="artist"
+                placeholder="    Enter artist name"
+              />
+              <ErrorMessage name="artist" component="div" className="error" />
+            </div>
+
+            <div>
+              <label htmlFor="duration">Duration </label>
+              <Field
+                type="number"
+                id="duration"
+                name="duration"
+                placeholder="    Enter song duration"
+              />
+              <ErrorMessage name="duration" component="div" className="error" />
+            </div>
+
+            <button type="submit">Add Song</button>
+          </Form>
+        )}
+      </Formik>
+    </div>
+  );
 };
 
 export default SongForm;
