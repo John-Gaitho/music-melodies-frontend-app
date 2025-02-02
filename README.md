@@ -60,11 +60,11 @@ npm run dev
 ```
 
 
-5 Open your browser and visit http://localhost:5000
+
 
 
 ## Related Repositories
-1 Deployed Backend API:https://json-server-.onrender.com
+1 Deployed Backend API:https://melodies-hub-backend.onrender.com
 
 2 Repository: music-melodies-backend-app Repository
 
