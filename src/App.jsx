@@ -6,40 +6,36 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import SongForm from './components/SongForm';
 
-
 function App() {
-// Handle song submission 
-const handleSongSubmit = (values) => {
-  console.log('Song submitted:', values);
-  fetch('http://localhost:5000/songs', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(values),
-  })
-    .then((response) => response.json())
-    .then((data) => {
-      console.log('Song added:', data);
+  // Handle song submission
+  const handleSongSubmit = (values) => {
+    console.log('Song submitted:', values);
+    fetch('https://melodies-hub-backend.onrender.com/songs', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(values),
     })
-    .catch((error) => console.error('Error adding song:', error));
-};
+      .then((response) => response.json())
+      .then((data) => {
+        console.log('Song added:', data);
+      })
+      .catch((error) => console.error('Error adding song:', error));
+  };
 
-
-
-return (
-  <Router>
-    <Navbar />
-    <Routes>
-      <Route path="/" element={<SongList />} />
-      <Route path="/Home" element={<Home />} />
-      <Route path="/songs" element={<SongList />} />
-      <Route path="/playlists" element={<PlaylistList />} />
-      <Route path="/add-song" element={<SongForm onSubmit={handleSongSubmit} />} />
-      
-    </Routes>
-  </Router>
-);
+  return (
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<SongList />} />
+        <Route path="/Home" element={<Home />} />
+        <Route path="/songs" element={<SongList />} />
+        <Route path="/playlists" element={<PlaylistList />} />
+        <Route path="/add-song" element={<SongForm onSubmit={handleSongSubmit} />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App;

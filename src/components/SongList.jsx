@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
 
-
 // validation schema for Formik
 const validateSearch = (values) => {
   const errors = {};
@@ -18,9 +17,12 @@ function SongList() {
   const [search, setSearch] = useState('');
 
   useEffect(() => {
-    fetch('http://music_db/songs') 
+    fetch('https://melodies-hub-backend.onrender.com/songs') 
       .then((response) => response.json())
-      .then((data) => setSongs(data));
+      .then((data) => {
+        console.log('Fetched songs:', data); // Add this to check data
+        setSongs(data);
+      });
   }, []);
 
   const filteredSongs = songs.filter((song) =>
@@ -65,6 +67,14 @@ function SongList() {
         )}
       </ul>
     </div>
+  );
+}
+
+function SongItem({ song }) {
+  return (
+    <li>
+      {song.title} by {song.artist}
+    </li>
   );
 }
 
