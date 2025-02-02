@@ -5,7 +5,7 @@ function PlaylistList() {
   const [error, setError] = useState(null);  //  to track any errors
 
   useEffect(() => {
-    fetch("https://melodies-hub-backend.onrender.com/playlists")
+    fetch("https://melodies-hub-backend.onrender.com/playlist")
       .then((response) => {
         if (!response.ok) {
           throw new Error('Network response was not ok');
