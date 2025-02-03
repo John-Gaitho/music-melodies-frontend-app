@@ -4,7 +4,7 @@ Melodies Hub is a web application that allows users to manage and explore songs 
 
 ### by JOHN- GAITHO.
  
-<img src="">
+<img src="https://dspncdn.com/a1/media/692x/29/19/1e/29191e8b14125c182a89de436a0114be.jpg">
 
 ## Requirements
 
@@ -62,8 +62,8 @@ pipenv shell
 
 4 Run the development server:
 ```
-npm run dev -
-flask run -
+npm run dev -frontend
+flask run -backend
 
 ```
 
