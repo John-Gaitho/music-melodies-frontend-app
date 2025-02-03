@@ -4,7 +4,7 @@ Melodies Hub is a web application that allows users to manage and explore songs 
 
 ### by JOHN- GAITHO.
  
-<img src="https://dspncdn.com/a1/media/692x/29/19/1e/29191e8b14125c182a89de436a0114be.jpg">
+<img src="https://i.pcmag.com/imagery/lineups/01ChCTMYX8njQl9apZ5oyRi-1..v1569492807.jpg">
 
 ## Requirements
 
