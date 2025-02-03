@@ -1,8 +1,8 @@
 nav {
-  background-color: #aa85aa;
-  color: rgb(208, 180, 180);
-  padding: 40px;
-  border-radius: 5%;
+  background-color: #eaefee;
+  color: rgb(238, 230, 230);
+  padding: 10px;
+  border-radius: 1%;
 }
 
 nav ul {
@@ -33,7 +33,7 @@ li {
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 10px;
-  color: #e42222;
+  color: #58e76d;
 }
 
 ul {
@@ -49,8 +49,8 @@ strong {
   color: #c7aeae;
 }
 body {
-  color: #eef7f9;
+  color: #dfe8e8;
   background-color: rgb(31, 11, 11);
-  background: url("https://dspncdn.com/a1/media/692x/29/19/1e/29191e8b14125c182a89de436a0114be.jpg")no-repeat center center fixed ;
+  background: url("https://i.pcmag.com/imagery/lineups/01ChCTMYX8njQl9apZ5oyRi-1..v1569492807.jpg")no-repeat center center fixed ;
   background-size: cover;
 }
